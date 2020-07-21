@@ -183,13 +183,13 @@
 }
 .img-container {
   position: relative;
-  width: 250px;
-  margin: 45px;
+  width: 300px;
+  margin: 20px;
   display: inline-block;
 }
 
 .image {
-  width: 250px;
+  width: 300px;
 }
 
 .overlay {
