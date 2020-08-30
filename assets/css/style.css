@@ -6,6 +6,7 @@
   color: white;
   /* font-size:18px !important; */
 }
+
 .nav-link {
   color: white;
   padding-right: 30px !important;
@@ -63,7 +64,7 @@
   }
   .navbar-collapse {
     margin-top: 12px;
-    background-color: rgba(31, 29, 29, 0.8);
+    /* background-color: rgba(31, 29, 29, 0.8); */
   }
   .nav-link:hover {
     padding-left: 10px !important;
