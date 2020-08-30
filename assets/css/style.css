@@ -3,7 +3,9 @@
 /* Navbar */
 
 .navbar-brand {
+  font-weight: 700;
   color: white;
+  margin-left: 10px;
   /* font-size:18px !important; */
 }
 
@@ -11,7 +13,7 @@
   color: white;
   padding-right: 30px !important;
   letter-spacing: 4px;
-  font-weight: 400;
+  font-weight: 500;
   transition: all ease 0.5s;
 }
 .nav-link:hover {
@@ -21,21 +23,23 @@
   border-bottom: 1px solid #4392f1;
 }
 #nav {
+  padding-left: 0px;
+  padding-right: 0px;
   transition: all ease 1s;
 }
 #nav.shrink {
   height: 60px;
   transition: all ease 1s;
-  background-color: rgba(31, 29, 29, 0.875);
+  background-color: rgba(31, 29, 29, 1);
 }
 .navbar-toggler {
+  margin-right: 10px;
   border-color: #4392f1;
   color: #4392f1 !important;
 }
 /* Gallery */
 
 /* Main Page */
-
 .main-page {
   height: 100vh;
   padding-top: 35vh;
@@ -62,9 +66,11 @@
     letter-spacing: 7px;
     font-size: 40px;
   }
+
   .navbar-collapse {
     margin-top: 12px;
-    /* background-color: rgba(31, 29, 29, 0.8); */
+    background-color: rgba(31, 29, 29, 0.9);
+    padding: 10px;
   }
   .nav-link:hover {
     padding-left: 10px !important;
