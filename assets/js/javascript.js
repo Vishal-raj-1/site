@@ -15,11 +15,6 @@ $(document).ready(function() {
   });
 });
 
-
-
-$(document).ready(function () {
-
-});
 $('.carousel-item', '.show-neighbors').each(function(){
   var next = $(this).next();
   if (! next.length) {
@@ -32,4 +27,24 @@ $('.carousel-item', '.show-neighbors').each(function(){
     prev = $(this).siblings(':last');
   }
   prev.children(':nth-last-child(2)').clone().prependTo($(this));
+});
+
+$(".slider").owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  autoHeight: false,
+
+  responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:2
+    },
+    1000:{
+        items:3
+    }
+}
 });
