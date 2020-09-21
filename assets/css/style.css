@@ -391,3 +391,15 @@ body {
 #papers .slider .project-card .project-content .btn{
   text-align: right;
 } 
+
+.owl-stage-outer {
+  height: 100% !important;
+}
+
+.owl-stage {
+  height: 100% !important;
+}
+
+.owl-carousel .owl-stage-outer .owl-item {
+  height: 95% !important;
+}
