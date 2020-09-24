@@ -347,6 +347,7 @@ body {
 
 .slider .project-card .project-content{
   padding: 10px 20px;
+  margin-bottom: 20px;
 
   display: flex;
   flex-direction: column;
