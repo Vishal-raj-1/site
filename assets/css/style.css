@@ -40,6 +40,52 @@
 
 /* Gallery */
 
+#gallery {
+  width: 100%;
+}
+
+.gallery-image-container {
+  padding: 10px;
+}
+
+.gallery-image-container img {
+  transform: scale(0.8);
+  transition: transform 1s;
+}
+
+.slick-center img{
+  transform: scale(1);
+}
+
+.gal-button {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.gal-button button {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 840px){
+  .gallery-image-container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .gallery-image-container img {
+    width: 90vw;
+    transform: scale(1);
+    transition: none;
+  }
+}
+
 /* Main Page */
 .main-page {
   height: 100vh;
@@ -153,36 +199,7 @@
 }
 
 /* Image Slider */
-.show-neighbors {
-  overflow: hidden;
-}
-.show-neighbors .carousel-indicators {
-  margin-right: 25%;
-  margin-left: 25%;
-}
-.show-neighbors .carousel-inner {
-  width: 150%;
-  left: -25%;
-}
-.show-neighbors .carousel-item-next:not(.carousel-item-left),
-.show-neighbors .carousel-item-right.active {
-  -webkit-transform: translate3d(33%, 0, 0);
-  transform: translate3d(33%, 0, 0);
-}
-.show-neighbors .carousel-item-prev:not(.carousel-item-right),
-.show-neighbors .carousel-item-left.active {
-  -webkit-transform: translate3d(-33%, 0, 0);
-  transform: translate3d(-33%, 0, 0);
-}
-.show-neighbors .item-third {
-  float: left;
-  position: relative;
-  /* captions can now be added */
-  width: 33.33333333%;
-}
-.item-third img {
-  filter: brightness(80%);
-}
+
 
 /* Tean Page CSS */
 
@@ -325,7 +342,22 @@ body {
   height: 100%;
 }
 
-.slider .project-card {
+@media screen and (max-width: 1150px){
+  .slider {
+    max-width: 100vw;
+    padding: 20px;
+  }
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+.project-card {
   background: #252525;
   margin: 0 10px;
   height: 100%;
@@ -342,7 +374,7 @@ body {
 .slider .project-card .project-img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .slider .project-card .project-content{
@@ -406,7 +438,23 @@ body {
   transform: scale(1.1);
 }
 
-.owl-stage-outer {
+.slick-controller {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  
+
+}
+
+.slick-controller i {
+  color: #1c1c1e;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+/* .owl-stage-outer {
   height: 100% !important;
 }
 
@@ -416,4 +464,4 @@ body {
 
 .owl-carousel .owl-stage-outer .owl-item {
   height: 95% !important;
-}
+} */
