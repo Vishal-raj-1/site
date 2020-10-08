@@ -17,7 +17,6 @@ $(document).ready(function () {
   slider.each(function (index) {
     $(this).slick({
       dots: false,
-      arrows: true,
 
       infinite: true,
       slidesToShow: 3,
@@ -25,6 +24,9 @@ $(document).ready(function () {
 
       autoplay: true,
       autoplaySpeed: 10000,
+
+      nextArrow: $(".next-button")[index],
+      prevArrow: $(".prev-button")[index],
 
       responsive: [
         {
@@ -39,6 +41,9 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+
+            nextArrow: false,
+            prevArrow: false,
           },
         },
         {
@@ -46,41 +51,41 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+
+            nextArrow: false,
+            prevArrow: false,
           },
         },
       ],
-
-      nextArrow: $('.next-button')[index],
-      prevArrow: $('.prev-button')[index],
     });
   });
 
   $(".gallery-slider").slick({
-      dots: false,
-      arrows: true,
+    dots: false,
+    arrows: true,
 
-      centerMode: true,
-      centerPadding: '60px',
-      variableWidth: true,
+    centerMode: true,
+    centerPadding: "60px",
+    variableWidth: true,
 
-      infinite: true,
-      slidesToShow: 1,
+    infinite: true,
+    slidesToShow: 1,
 
-      autoplay: true,
-      autoplaySpeed: 10000,
+    autoplay: true,
+    autoplaySpeed: 10000,
 
-      nextArrow: $('.gal-next-button'),
-      prevArrow: $('.gal-prev-button'),
+    nextArrow: $(".gal-next-button"),
+    prevArrow: $(".gal-prev-button"),
 
-      responsive: [
-        {
-          breakpoint: 840,
-          settings: {
-            centerMode: false,
-            centerPadding: '0px',
-            variableWidth: false,
-          }
-        }
-      ]
+    responsive: [
+      {
+        breakpoint: 840,
+        settings: {
+          centerMode: false,
+          centerPadding: "0px",
+          variableWidth: false,
+        },
+      },
+    ],
   });
 });
