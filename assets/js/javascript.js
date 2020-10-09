@@ -41,9 +41,6 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-
-            nextArrow: false,
-            prevArrow: false,
           },
         },
         {
@@ -51,9 +48,6 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-
-            nextArrow: false,
-            prevArrow: false,
           },
         },
       ],
