@@ -270,9 +270,12 @@
 
 /* Form */
 .form-container {
-  padding: 250px;
   padding-top: 85px;
   padding-bottom: 50px;
+}
+.form-container form{
+  width: 70%;
+  margin: 0 auto;
 }
 .form-container input,
 .form-container textarea {
@@ -280,8 +283,8 @@
 }
 /* Media Quries */
 @media (max-width: 576px) {
-  .form-container {
-    padding: 50px;
+  .form-container form{
+    width: 85%;
   }
 }
 
